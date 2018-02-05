@@ -1,6 +1,6 @@
 ## README
 
-> > > > # La réponse de l'univers
+<center># La réponse de l'univers</center>
 
 Tu vas créer un site où seuls les utilisateurs peuvent y voir le contenu. C'est topeu-secret. Pour ceci, nous allons créer des fonctions basiques de login, puis restreindre l'accès à certaines fonctionnalités du site.
 

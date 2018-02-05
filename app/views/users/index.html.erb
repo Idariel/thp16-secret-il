@@ -1,2 +1,11 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1><em>The answer is </em>42</h1>
+<h3>But what was the question ?</h3>
+<br />
+
+<Sign up:>
+  <%= form_for @user do |f| %>
+    Your mail address: <%= f.text_field :email ><br />
+    Your password: <%= f.text_field :password %><br />
+    Confirm your password: <%= f.text_field :password %><br />
+    <%= f.submit %> # Create account
+  <% end %>
