@@ -2,10 +2,10 @@
 <h3>But what was the question ?</h3>
 <br />
 
-<Sign up:>
-  <%= form_for @user do |f| %>
-    Your mail address: <%= f.text_field :email ><br />
+<!-- <Sign up:> -->
+    <%= form_for User.new do |f| %>
+    Your mail address: <%= f.text_field :email %><br />
     Your password: <%= f.text_field :password %><br />
     Confirm your password: <%= f.text_field :password %><br />
-    <%= f.submit %> # Create account
+    <%= f.submit "Create account" %>
   <% end %>
