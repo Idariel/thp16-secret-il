@@ -14,5 +14,10 @@ Tu vas créer un site où seuls les utilisateurs peuvent y voir le contenu. C'es
 * ruby 2.3.4
 * app : https://dashboard.heroku.com/apps/secret-il
 
+## CRUD
+Je n'arrive pas à afficher les emails. Si quelqu'un peut me dire où j'ai mal fait...
+
+## Login / Validation
+J'ai désactivé cette partie, car je n'avais plus le CRUD
 
 # thp16-secret-il
