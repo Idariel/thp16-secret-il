@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update(gossip_params)
+    if @user.update(user_params)
       redirect_to @user
     else
       render 'edit'
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
   # Utilisé dans create et update
   private
   def user_params # Définir les attributs en paramètres !!!!
-    params.require(:user).permit(:xxx, :yyy)
+    params.require(:user).permit(:email)
   end
 
 end
