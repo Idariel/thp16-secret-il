@@ -11,4 +11,7 @@
   </tr>
 </table>
 <p><%= link_to 'Create new user', new_user_path %></p>
+<p><%= link_to 'Delete this user', user_path(user),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %></p>
 <p><%= link_to 'Home', root_path %></p>
