@@ -1,11 +1,24 @@
-<h1><em>The answer is </em>42</h1>
-<h3>But what was the question ?</h3>
+<h1>What is the answer to the most important question about the universe?</h1>
+<h3>From Douglas Adams's books (forget about Dr Who)</h3>
 <br />
 
-<!-- <Sign up:> -->
-    <%= form_for User.new do |f| %>
-    Your mail address: <%= f.text_field :email %><br />
-    Your password: <%= f.text_field :password %><br />
-    Confirm your password: <%= f.text_field :password %><br />
-    <%= f.submit "Create account" %>
+<p><%= link_to 'First, create new user', new_user_path %></p>
+<p><%= link_to 'Want to know about the secret page', new_user_path %></p>
+<b />
+
+<table>
+    <th><h3>List of User</h3></th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <p><tr>
+      <td width="300px"><%= user.email %></td>
+      <td width="50px"><%= link_to 'Show', user_path(user) %></td>
+      <td width="50px"><%= link_to 'Edit', edit_user_path(user) %></td>
+      <td width="50px"><%= link_to 'Delete', user_path(user),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr></p>
   <% end %>
+</table>

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    @User.save
+    @user.save
     redirect_to @user
   end
 
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @User.update(gossip_params)
+    if @user.update(gossip_params)
       redirect_to @user
     else
       render 'edit'
@@ -32,8 +32,8 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    @User.destroy
-    redirect_to gossips_path
+    @user.destroy
+    redirect_to users_path
   end
 
   # Utilisé dans create et update

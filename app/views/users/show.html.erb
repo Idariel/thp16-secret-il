@@ -1,2 +1,14 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h2>Nouveau Gossip</h2>
+
+<table>
+  <tr>
+    <th></th>
+    <!-- <th>Nom ou Pseudo</th> -->
+    <th>New User</th>
+  </tr>
+  <tr>
+    <td><%= @user.email %></td>
+  </tr>
+</table>
+<p><%= link_to 'Create new user', new_user_path %></p>
+<p><%= link_to 'Home', root_path %></p>
