@@ -13,3 +13,94 @@
  *= require_tree .
  *= require_self
  */
+ = require_tree .
+ = require_self
+
+
+ html, body {
+   margin: 0;
+   padding: 0;
+ }
+
+ a{
+   color: #FFFFFF;
+ }
+
+ header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: baseline;
+   background-color: #000000;
+   margin: 0;
+   padding: 0 20px;
+   font-family: sans-serif;
+   font-weight: bold;
+ }
+
+.ele-flex1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.ele-flex2 a{
+  color: #FFFFFF;
+}
+.ele-flex2{
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 20px;
+}
+
+h1{
+  margin: 60px auto 20px auto;
+  text-align: center;
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+h3{
+  text-align: center;
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+p a{
+  color: #000000;
+}
+p{
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+.form{
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 15px 25%;
+}
+
+.formButton{
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 15px 25%;
+  padding: 5px;
+  border: #000000 solid 1px;
+  border-radius: 5px;
+}
