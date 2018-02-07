@@ -1,20 +1,5 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- = require_tree .
- = require_self
+*= require_tree .
+*= require_self
 
 
  html, body {
@@ -37,6 +22,21 @@
    font-family: sans-serif;
    font-weight: bold;
  }
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #000000;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-top: 100px;
+  padding: 0 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
 .ele-flex1{
   display: flex;
@@ -103,4 +103,28 @@ p{
   padding: 5px;
   border: #000000 solid 1px;
   border-radius: 5px;
+}
+
+td a{
+  color: #000000;
+}
+
+.signup{
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9em;
+  margin: 10px 25%;
+}
+
+.center{
+  text-align: center;
+}
+
+.red{
+  color: red;
+}
+.white{
+  color: #FFFFFF;
 }

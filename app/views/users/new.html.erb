@@ -1,9 +1,11 @@
 <%= render 'header' %>
-
+<br />
 <Sign up:>
     <%= form_for @user do |f| %>
-    Your mail address: <%= f.text_field :email %><br />
-    Your password: <%= f.text_field :password %><br />
-    Confirm your password: <%= f.text_field :password %><br />
-    <%= f.submit "Create account" %>
+    <p class="signup">Your mail address: <%= f.text_field :email %></p>
+    <p class="signup">Your password: <%= f.text_field :password %></p>
+    <p class="signup">Confirm your password: <%= f.text_field :password %></p>
+    <p class="formButton"><%= f.submit "Create account" %></p>
   <% end %>
+
+<%= render 'footer' %>
